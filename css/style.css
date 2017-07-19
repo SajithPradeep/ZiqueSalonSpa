@@ -1,17 +1,16 @@
 body {
     background: url("../images/bg.jpg");
     background-size: cover;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
 }
-.title-heading h1 {
-    font-size: 230px;
-    margin-bottom: 5px;
-    margin-top: 30px
-    
-}
-.title-subheading h2 {
-    font-size: 25px;
-    margin-top: 5px;
-    font-family: cursive;
+.brand-logo img{
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12em;
+  opacity: 0.7;
+
 }
 header {
     background:rgba(100,100,100,0.1);
@@ -25,10 +24,11 @@ header {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
+    margin: 0 auto;
 }
 .header-icon {
-    margin: 5px;
-    color: rgba(204,161,44,1);
+    margin: 0.5em 0.5em 0 0 ;
+    color: rgba(255,255,255,0.6);
     font-size: 36px;
 }
 .header-logo img {
@@ -41,7 +41,6 @@ header {
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    font-family: cursive;
     font-size: 20px;
 }
 .body-content {
@@ -61,9 +60,17 @@ header {
     display: none;
     align-items: center;
 }
-.maleFemale {
+.book-appointment{
+  margin-top: 1em;
+
+}
+.book-appointment .btn{
+  background: rgba(255,255,255, 0.6)
+}
+.servicesMenu {
     display: flex;
-    padding: 25px;
+    margin-top: 13em;
+    margin-bottom: 5em;
 }
 .gender {
     flex: 1;
@@ -76,10 +83,9 @@ header {
     border-right: 1px solid;
 }
 .salon-services {
-    border: 1px solid rgba(100,100,100,0.1); 
+    border: 1px solid rgba(100,100,100,0.1);
     border-radius: 10px;
     font-size: 15px;
-    font-family: cursive;
     padding: 10px 10px 0 10px;
     display: flex;
     flex-direction: column;
@@ -90,7 +96,6 @@ header {
 }
 .service-group-title {
     font-size: 30px;
-    font-family: cursive;
     display: flex;
     justify-content: center;
 }
@@ -105,16 +110,24 @@ header {
 /* footer styles */
 footer {
     padding: 20px;
-    background:rgba(100,100,100,1);
+    background: rgba(255,255,255,1);
+    color: #000;
 }
 .address {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .footer-icons {
     display: flex;
+    list-style: none;
+    padding: 0;
 }
-
+.footer-icons li:first-child{
+  padding-left: 0
+}
+.footer-icons li{
+  padding:0.3em;
+}
 
 
 
