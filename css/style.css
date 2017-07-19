@@ -1,6 +1,5 @@
 body {
-    background: url("../images/bg.jpg");
-    background-size: cover;
+    background: url("../images/bg.jpg") center;
     color: #fff;
     font-family: 'Varela Round', sans-serif;
 }
