@@ -1,0 +1,153 @@
+body {
+    background: url("../images/bg.jpg");
+    background-size: cover;
+}
+.title-heading h1 {
+    font-size: 230px;
+    margin-bottom: 5px;
+    margin-top: 30px
+    
+}
+.title-subheading h2 {
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: cursive;
+}
+header {
+    background:rgba(100,100,100,0.1);
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-icons-collection {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.header-icon {
+    margin: 5px;
+    color: rgba(204,161,44,1);
+    font-size: 36px;
+}
+.header-logo img {
+    height: 40px;
+    margin: 10px;
+}
+.header-button {
+    padding: 5px 10px 5px 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+}
+.body-content {
+    display: flex;
+    flex-direction: column;
+}
+#modal {
+    display: none;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#whatsapp {
+    font-size: 20px;
+    display: none;
+    align-items: center;
+}
+.maleFemale {
+    display: flex;
+    padding: 25px;
+}
+.gender {
+    flex: 1;
+    font-size: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.gender:nth-child(odd) {
+    border-right: 1px solid;
+}
+.salon-services {
+    border: 1px solid rgba(100,100,100,0.1); 
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.salon-services-list {
+    display: flex;
+    justify-content: space-between;
+}
+.service-group-title {
+    font-size: 30px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+.salon-services-span {
+    font-size: 12px;
+    margin-right: 10px;
+}
+.salon-services-amount {
+    margin-left: 10px;
+}
+
+/* footer styles */
+footer {
+    padding: 20px;
+    background:rgba(100,100,100,1);
+}
+.address {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icons {
+    display: flex;
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width: 500px) {
+    .title-heading h1 {
+        font-size: 100px;
+        margin-bottom: 5px;
+        margin-top: 50px
+    }
+    .title-subheading h2 {
+        font-size: 20px;
+        margin-top: 5px;
+        font-family: cursive;
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+    }
+    #whatsapp {
+        position: absolute;
+        top: 42px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 501px) {
+    .title-heading h1 {
+        font-size: 180px;
+        margin-bottom: 5px;
+        margin-top: 50px
+    }
+     #whatsapp {
+        position: absolute;
+        top: 42px;
+    }
+}
