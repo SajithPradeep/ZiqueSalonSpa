@@ -47,6 +47,7 @@ header {
 .body-content {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 #modal {
     display: none;
@@ -100,6 +101,21 @@ header {
 }
 .salon-services-amount {
     margin-left: 10px;
+}
+#google-form {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #673ab7;
+}
+#google-form iframe {
+    height:400px;
+    width: 500px;
+}
+.google-form-close-icon {
+    position: fixed;
+    right: 20px;
+    top: 10px;
 }
 
 /* footer styles */
