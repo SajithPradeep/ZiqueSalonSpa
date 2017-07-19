@@ -65,12 +65,11 @@ header {
 
 }
 .book-appointment .btn{
-  background: rgba(255,255,255, 0.6)
+  background: rgba(255,255,255, 0.8)
 }
 .servicesMenu {
     display: flex;
     margin-top: 13em;
-    margin-bottom: 5em;
 }
 .gender {
     flex: 1;
@@ -78,9 +77,14 @@ header {
     flex-direction: column;
     display: flex;
     align-items: center;
+    padding: 1em 1em 5em;
 }
 .gender:nth-child(odd) {
-    border-right: 1px solid;
+    border-right: 1px solid rgba(150,150,150,1  );
+    background: rgba(0,0,255,0.2);
+}
+.gender:nth-child(even) {
+    background: rgba(255, 0, 255, 0.2);
 }
 .salon-services {
     border: 1px solid rgba(100,100,100,0.1);
