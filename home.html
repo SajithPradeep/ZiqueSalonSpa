@@ -1,16 +1,22 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta name=viewport content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/animations.css" type="text/css">
-        <script type="text/javascript" src="js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/handlebars.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
+
+    <!--The body content starts here-->
     <body>
+    <script id="some-template" type="text/x-handlebars-template">
+
+        <!--This is the header section that contains the title bar and the social media icons-->
         <header>
             <div class="header-content">
                 <div class="header-logo">
@@ -36,7 +42,14 @@
                 </div>
             </div>
         </header>
+        <!--End of the header section-->
+
+        <!--============================================================================================-->
+        
+        <!--Starting of the main content section-->
         <div class="body-content container-fluid">
+
+            <!--This section contains the logo and the book an appointment button-->
             <div class="main-content">
                 <div class="brand-logo">
                   <img src="images/zique.png" alt="Zique - Luxury Salon and Spa">
@@ -49,121 +62,46 @@
                     </a>
                 </div>
             </div>
+            <!--End of section-->
+
+            <!--This section contains the list of services for both men and women-->
             <div class="servicesMenu">
+                {{#users}}
                 <div class="gender">
-                    <i class="fa fa-mars" aria-hidden="true" style="font-size:75px"></i>
-                    <i class="fa fa-chevron-down pulse" aria-hidden="true" style="font-size:36px"></i>
+                    <i class="{{person.gender}}" aria-hidden="true" style="font-size:75px"></i>
                     <div class="salon-services">
                         <div>
-                            <p class="service-group-title">Hair Cut & Style</p>
+                            {{#each person.category}}
+                            <p class="service-group-title">{{serviceType}}</p>
+                            {{#each services}}
                             <ul style="list-style: none; padding-left: 0;">
                                 <li class="salon-services-list">
                                     <p class="salon-services-name">
-                                        HAIRCUT
+                                        {{name}}
                                         <span class="salon-services-span">
-                                            (Style Director)
+                                            {{stylist}}
                                         </span>
                                     </p>
                                     <p class="salon-services-amount">
                                         <span>
                                             <i class="fa fa-inr" style="font-size:15px"></i>
                                         </span>
-                                        950
-                                    </p>
-                                </li>
-                                <li class="salon-services-list">
-                                    <p class="salon-services-name">
-                                        HAIRCUT
-                                        <span class="salon-services-span">
-                                            (Top Stylist)
-                                        </span>
-                                    </p>
-                                    <p class="salon-services-amount">
-                                        <span>
-                                            <i class="fa fa-inr" style="font-size:15px"></i>
-                                        </span>
-                                        650
+                                        {{amount}}
                                     </p>
                                 </li>
                             </ul>
+                            {{/each}}
+                            {{/each}}
                         </div>
                     </div>
-                    <div class="salon-services">
-                        <div>
-                            <p class="service-group-title">Hair Cut & Style</p>
-                            <ul style="list-style: none; padding-left: 0;">
-                                <li class="salon-services-list">
-                                    <p class="salon-services-name">
-                                        HAIRCUT
-                                        <span class="salon-services-span">
-                                            (Style Director)
-                                        </span>
-                                    </p>
-                                    <p class="salon-services-amount">
-                                        <span>
-                                            <i class="fa fa-inr" style="font-size:15px"></i>
-                                        </span>
-                                        950
-                                    </p>
-                                </li>
-                                <li class="salon-services-list">
-                                    <p class="salon-services-name">
-                                        HAIRCUT
-                                        <span class="salon-services-span">
-                                            (Top Stylist)
-                                        </span>
-                                    </p>
-                                    <p class="salon-services-amount">
-                                        <span>
-                                            <i class="fa fa-inr" style="font-size:15px"></i>
-                                        </span>
-                                        650
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="gender">
-                    <i class="fa fa-venus" aria-hidden="true" style="font-size:75px"></i>
-                    <i class="fa fa-chevron-down pulse" aria-hidden="true" style="font-size:36px"></i>
-                    <div class="salon-services">
-                        <div>
-                            <p class="service-group-title">Hair Cut & Style</p>
-                            <ul style="list-style: none; padding-left: 0;">
-                                <li class="salon-services-list">
-                                    <p class="salon-services-name">
-                                        HAIRCUT
-                                        <span class="salon-services-span">
-                                            (Style Director)
-                                        </span>
-                                    </p>
-                                    <p class="salon-services-amount">
-                                        <span>
-                                            <i class="fa fa-inr" style="font-size:15px"></i>
-                                        </span>
-                                        950
-                                    </p>
-                                </li>
-                                <li class="salon-services-list">
-                                    <p class="salon-services-name">
-                                        HAIRCUT
-                                        <span class="salon-services-span">
-                                            (Top Stylist)
-                                        </span>
-                                    </p>
-                                    <p class="salon-services-amount">
-                                        <span>
-                                            <i class="fa fa-inr" style="font-size:15px"></i>
-                                        </span>
-                                        650
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                </div> 
+                {{/users}}   
             </div>
+            <!--End of the services list section-->
+            <!--====================================================================================================================-->
+
+
+            <!--Google form for book an appointmnent-->
             <div id="google-form">
                 <div class="google-form-close">
                     <button type="submit" class="google-form-close-button" onclick="triggerOverlay()">
@@ -172,8 +110,15 @@
                 </div>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdspvvdDIgYFAdenP_Cq16s7Ulretyq3R7EX9ajX3cjcM0U3A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
-        </div>
+            <!--End of the google form section-->
         
+        
+        </div>
+        <!--End of the main content section-->
+
+        <!--================================================================================================================================-->
+        
+        <!--start of the footer section-->
         <footer>
             <div class="address">
                 <div class="address-text">
@@ -205,9 +150,13 @@
                 </ul>
                 <div class="map">
                      <h3>Direction</h3>
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.759474032358!2d77.69369464999998!3d12.943681100000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ede5f11ec78f998!2sDivyasree+Technopolis!5e0!3m2!1sen!2sin!4v1500403254151" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.444441493724!2d80.23905167839087!3d13.070995216273156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266795ac4a233%3A0x4fa693c0bd51d1aa!2sZique+Salon+%26+Spa!5e0!3m2!1sen!2sin!4v1500555148413" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </footer>
+        <!--End of the footer section -->
+
+    </script>   
+    <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
