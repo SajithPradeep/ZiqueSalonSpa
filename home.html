@@ -75,6 +75,11 @@
                             <p class="service-group-title">{{serviceType}}</p>
                             {{#each services}}
                             <ul style="list-style: none; padding-left: 0;">
+                                {{#if serviceSubType}}
+                                    <li class="service-group-subtitle">
+                                        <p>{{serviceSubType}} </p>
+                                    </li>
+                                {{/if}}    
                                 <li class="salon-services-list">
                                     <p class="salon-services-name">
                                         {{name}}

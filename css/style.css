@@ -103,6 +103,11 @@ header {
     display: flex;
     justify-content: center;
 }
+.service-group-subtitle {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
 .salon-services-span {
     font-size: 12px;
     margin-right: 10px;
