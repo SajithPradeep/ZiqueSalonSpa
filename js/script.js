@@ -36,12 +36,30 @@ function clearForm() {
 //--------------------------------------------------------------------//
 
 function formValidation(name, tel) {
-    if(name === "") {
-        alert("Name cannot be left empty");
+    if(name === "" && tel==="") {
+        alert("Name and Telephone number cannot be left empty");
+        document.getElementById("text-input").style.border="2px solid red";
+        document.getElementById("tel-input").style.border="2px solid red";
         $("#email-input").val("");
-        $("#tel-input").val("");
         $("#date-input").val("");
         $("#time-input").val("");
+    } else if (name === "") {
+        alert("Name cannot be left empty");
+        document.getElementById("text-input").style.border="2px solid red";
+        $("#tel-input").val("");
+        $("#email-input").val("");
+        $("#date-input").val("");
+        $("#time-input").val("");
+    } else if (tel === "") {
+        alert("Telephone number cannot be left empty");
+        document.getElementById("tel-input").style.border="2px solid red";
+        $("#text-input").val("");
+        $("#email-input").val("");
+        $("#date-input").val("");
+        $("#time-input").val("");
+    }
+    else {
+        return true;
     }
 }
 //-------------------------------------------------------------------//
@@ -54,10 +72,12 @@ function postToGoogle() {
     let tempDate = date.split("-");
     let time = $("#time-input").val();
     let tempTime = time.split(":");
-    formValidation(name, tel);
+    let formValid = formValidation(name, tel);
 
-    $.ajaxSetup({ cache: false });
-    $.ajax({
+    if(formValid) {
+        console.log("Starting ajax");
+        $.ajaxSetup({ cache: false });
+        $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSezeWkcIyiqtADR-7DH8ERWu7K5leVDIbd40jUtS80sEnzJbg/formResponse",
         crossDomain: true,
         data: {
@@ -81,6 +101,7 @@ function postToGoogle() {
             triggerOverlay();
         }    
     });
+    }  
 }
 //--------------------------------------------------------------------//
 

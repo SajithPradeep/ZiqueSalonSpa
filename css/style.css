@@ -131,6 +131,12 @@ header {
     display: flex;
     flex-direction: column;
 }
+#text-input {
+    border: 2px solid black;
+}
+#tel-input {
+    border: 2px solid black;
+}
 .google-form-close {
 }
 .google-form-close-button {
