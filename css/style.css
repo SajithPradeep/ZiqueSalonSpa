@@ -59,6 +59,8 @@ header {
     font-size: 20px;
     display: none;
     align-items: center;
+    position: absolute;
+    top: 54px;
 }
 .book-appointment{
   margin-top: 1em;
@@ -137,7 +139,7 @@ header {
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     background: #0d0d0d;
 }
 
@@ -182,8 +184,7 @@ footer {
         align-items: center;
     }
     #whatsapp {
-        position: absolute;
-        top: 42px;
+        
     }
 }
 
@@ -195,7 +196,7 @@ footer {
     }
      #whatsapp {
         position: absolute;
-        top: 42px;
+        top: 54px;
     }
 }
 
