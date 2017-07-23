@@ -24,7 +24,18 @@ function triggerOverlay() {
 }
 //--------------------------------------------------------------------//
 
+//----------------------------------------------------------------------//
+// function to clear the book an appointment form after submitting the values.
+function clearForm() {
+    $("#text-input").val("");
+    $("#email-input").val("");
+    $("#tel-input").val("");
+    $("#date-input").val("");
+    $("#time-input").val("");
+}
 //--------------------------------------------------------------------//
+
+//-------------------------------------------------------------------//
 // Function to submit the response to google form
 function postToGoogle() {
     let name = $("#text-input").val();
@@ -33,6 +44,7 @@ function postToGoogle() {
     let date = $("#date-input").val();
     let tempDate = date.split("-");
     let time = $("#time-input").val();
+    let tempTime = time.split(":");
 
     $.ajaxSetup({ cache: false });
     $.ajax({
@@ -44,14 +56,20 @@ function postToGoogle() {
             "entry.993040394": tel,
             "entry.15896639_month": tempDate[1],
             "entry.15896639_day": tempDate[2],
-            "entry.15896639_year": tempDate[0]
+            "entry.15896639_year": tempDate[0],
+            "entry.416657952_hour": tempTime[0],
+            "entry.416657952_minute": tempTime[1]
         },
         type: "GET",
         dataType: "jsonp",
-        statusCode : {
-            0: this.triggerOverlay(),
-            200: this.triggerOverlay()
-        }
+        success: function () {
+            clearForm();
+            triggerOverlay();
+        },
+        error: function() {
+             clearForm();
+            triggerOverlay();
+        }    
     });
 }
 //--------------------------------------------------------------------//
