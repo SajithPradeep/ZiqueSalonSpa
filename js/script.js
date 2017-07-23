@@ -31,18 +31,23 @@ function postToGoogle() {
     let email = $("#email-input").val();
     let tel = $("#tel-input").val();
     let date = $("#date-input").val();
+    let tempDate = date.split("-");
     let time = $("#time-input").val();
 
+    $.ajaxSetup({ cache: false });
     $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSezeWkcIyiqtADR-7DH8ERWu7K5leVDIbd40jUtS80sEnzJbg/formResponse",
         crossDomain: true,
         data: {
             "entry.1802730727": name,
             "entry.1071256230": email,
-            "entry.993040394": tel
+            "entry.993040394": tel,
+            "entry.15896639_month": tempDate[1],
+            "entry.15896639_day": tempDate[2],
+            "entry.15896639_year": tempDate[0]
         },
-        type: "POST",
-        dataType: "xml",
+        type: "GET",
+        dataType: "jsonp",
         statusCode : {
             0: this.triggerOverlay(),
             200: this.triggerOverlay()
@@ -301,7 +306,7 @@ var data = {
             }]
         }}
     ]
-}  
+}   
 
 $('body').append(template(data));
 //--------------------------------------------------------------------//
