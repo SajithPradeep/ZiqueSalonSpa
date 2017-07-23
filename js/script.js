@@ -35,6 +35,15 @@ function clearForm() {
 }
 //--------------------------------------------------------------------//
 
+function formValidation(name, tel) {
+    if(name === "") {
+        alert("Name cannot be left empty");
+        $("#email-input").val("");
+        $("#tel-input").val("");
+        $("#date-input").val("");
+        $("#time-input").val("");
+    }
+}
 //-------------------------------------------------------------------//
 // Function to submit the response to google form
 function postToGoogle() {
@@ -45,6 +54,7 @@ function postToGoogle() {
     let tempDate = date.split("-");
     let time = $("#time-input").val();
     let tempTime = time.split(":");
+    formValidation(name, tel);
 
     $.ajaxSetup({ cache: false });
     $.ajax({

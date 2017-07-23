@@ -186,6 +186,12 @@ footer {
     #whatsapp {
         
     }
+    .gender {
+        padding: 0;
+    }
+    .service-group-title {
+        font-size: 25px;
+    }
     body {
         background: black;
     }
