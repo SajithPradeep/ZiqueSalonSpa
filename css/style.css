@@ -1,5 +1,5 @@
 body {
-    background: url("../images/bg.jpg") center;
+    background: url("../images/bg.jpg") fixed 50% 20%;
     color: #fff;
     font-family: 'Varela Round', sans-serif;
 }
@@ -119,17 +119,17 @@ header {
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
-    background: #673ab7;
+    background: #0f1314;
     display: none;
+    flex-direction: column;
+    padding: 30px;
 }
-#google-form iframe {
-    height:500px;
-    width: 500px;
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
 }
 .google-form-close {
-    position: fixed;
-    right: 20px;
-    top: 10px;
 }
 .google-form-close-button {
     padding: 5px 10px 5px 10px;
@@ -196,5 +196,25 @@ footer {
      #whatsapp {
         position: absolute;
         top: 42px;
+    }
+}
+
+@media screen and (max-width:855px) {
+    .servicesMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .gender:nth-child(odd) {
+        border-right: none;
+    }
+    .address {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .address-text, .map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

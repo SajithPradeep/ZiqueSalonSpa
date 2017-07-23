@@ -26,6 +26,7 @@ var data = {
         person: {
             gender: "fa fa-mars",
             category: [{
+                serviceID: "MenOne",
                 serviceType: "Hair Cut & Style",
                 services: [
                     {
@@ -65,6 +66,7 @@ var data = {
                     }
                 ]
             }, {
+                serviceID: "MenTwo",
                 serviceType: "Colour Bar Services",
                 services: [
                     {
@@ -88,6 +90,7 @@ var data = {
                     }
                 ]
             }, {
+                serviceID: "MenThree",
                 serviceType: "Texture",
                 services: [
                     {
@@ -101,6 +104,7 @@ var data = {
                     }
                 ]
             }, {
+                serviceID: "MenFour",
                 serviceType: "Washhouse Services",
                 services: [
                     {
@@ -122,6 +126,7 @@ var data = {
         person: {
             gender: "fa fa-venus",
             category: [{
+                serviceID: "WomenOne",
                 serviceType: "Hair Cut & Style",
                 services: [
                     {
@@ -164,6 +169,7 @@ var data = {
                     }
                 ]
             }, {
+                 serviceID: "WomenTwo",
                  serviceType: "Colour Bar Services",
                  services : [
                      {  
@@ -207,6 +213,7 @@ var data = {
                     }
                  ]
             }, {
+                serviceID: "WomenThree",
                 serviceType: "Texture",
                 services: [
                     {
@@ -223,6 +230,7 @@ var data = {
                         amount: 2050 
                     }]
             }, {
+                serviceID: "WomenFour",
                 serviceType: "Washhouse Services",
                 services: [
                     {
