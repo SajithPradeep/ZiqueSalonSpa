@@ -186,6 +186,9 @@ footer {
     #whatsapp {
         
     }
+    body {
+        background: black;
+    }
 }
 
 @media screen and (max-width: 800px) and (min-width: 501px) {
