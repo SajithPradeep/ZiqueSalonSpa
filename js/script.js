@@ -1,4 +1,5 @@
-
+//------------------------------------------------------------------//
+// Function to Toggle the Whatsapp Number
 function whatsappToggle() {
     var displayType = document.getElementById("whatsapp").style.display;
     if(displayType === "" || displayType === "none") {
@@ -8,6 +9,10 @@ function whatsappToggle() {
        document.getElementById("whatsapp").style.display = "none"
     }
 }
+//-------------------------------------------------------------------//
+
+//-------------------------------------------------------------------//
+// Function to Trigger the Book an appointment overlay
 function triggerOverlay() {
     var displayType = document.getElementById("google-form").style.display;
     if(displayType === "" || displayType === "none") {
@@ -17,7 +22,38 @@ function triggerOverlay() {
        document.getElementById("google-form").style.display = "none"
     }
 }
+//--------------------------------------------------------------------//
 
+//--------------------------------------------------------------------//
+// Function to submit the response to google form
+function postToGoogle() {
+    let name = $("#text-input").val();
+    let email = $("#email-input").val();
+    let tel = $("#tel-input").val();
+    let date = $("#date-input").val();
+    let time = $("#time-input").val();
+
+    $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSezeWkcIyiqtADR-7DH8ERWu7K5leVDIbd40jUtS80sEnzJbg/formResponse",
+        crossDomain: true,
+        data: {
+            "entry.1802730727": name,
+            "entry.1071256230": email,
+            "entry.993040394": tel
+        },
+        type: "POST",
+        dataType: "xml",
+        statusCode : {
+            0: this.triggerOverlay(),
+            200: this.triggerOverlay()
+        }
+    });
+}
+//--------------------------------------------------------------------//
+
+
+//--------------------------------------------------------------------//
+// This is the database section where the list of services are stored
 var source = $("#some-template").html(); 
 var template = Handlebars.compile(source); 
 
@@ -268,3 +304,4 @@ var data = {
 }  
 
 $('body').append(template(data));
+//--------------------------------------------------------------------//
