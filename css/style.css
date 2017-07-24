@@ -73,6 +73,8 @@ header {
 .servicesMenu {
     display: flex;
     margin-top: 13em;
+    flex-wrap: wrap;
+  	justify-content: space-between;
 }
 .gender {
     flex: 1;
@@ -82,12 +84,22 @@ header {
     align-items: center;
     padding: 1em 1em 5em;
 }
-.gender:nth-child(odd) {
-    border-right: 1px solid rgba(150,150,150,1  );
+.gender:nth-child(1) {
+    flex: 50%;
+    border-right: 1px solid rgba(150,150,150,1);
+    border-bottom: 1px solid rgba(150,150,150,1);
+    border-top: 1px solid rgba(150,150,150,1);
     background: rgba(0,0,255,0.2);
 }
-.gender:nth-child(even) {
+.gender:nth-child(2) {
+    flex: 50%;
     background: rgba(255, 0, 255, 0.2);
+    border-top: 1px solid rgba(150,150,150,1);
+    border-bottom: 1px solid rgba(150,150,150,1);    
+}
+.gender:nth-child(3) {
+    flex: 100%;
+    background: rgba(0, 0, 0, 0.2);
 }
 .salon-services {
     border: 1px solid rgba(100,100,100,0.1);

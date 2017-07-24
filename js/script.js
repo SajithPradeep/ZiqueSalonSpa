@@ -373,7 +373,27 @@ var data = {
                         amount: 750 
                     }]
             }]
-        }}
+        }},
+        {
+            person: {
+                gender: "fa fa-intersex",
+                category: [{
+                    serviceID: "UnisexOne",
+                    serviceType: "Hair Cut & Style",
+                    services: [
+                        {
+                            name: "Head Oil Massage",
+                            stylist: "",
+                            amount: 750 
+                        }, {
+                            name: "Deep Hair Repair Treatment ",
+                            stylist: "",
+                            amount: 2850 
+                        }
+                    ]
+                }]
+            }
+        }
     ]
 }   
 
