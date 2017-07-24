@@ -14,6 +14,7 @@ function whatsappToggle() {
 //-------------------------------------------------------------------//
 // Function to Trigger the Book an appointment overlay
 function triggerOverlay() {
+    // alert("hi");
     var displayType = document.getElementById("google-form").style.display;
     if(displayType === "" || displayType === "none") {
        document.getElementById("google-form").style.display = "flex";
@@ -231,7 +232,52 @@ var data = {
                         amount: 550 
                     }
                 ]
-            }]
+            }, {
+                serviceID: "MenFive",
+                serviceType: "Wedding Special",
+                services: [
+                    {
+                        name: "Chest & Abdomen ",
+                        stylist: "",
+                        amount: 1650 
+                    }, {
+                        name: "Under Arms ",
+                        stylist: "",
+                        amount: 650 
+                    }, {
+                        name: "Full Arms ",
+                        stylist: "",
+                        amount: 950 
+                    },  {
+                        name: "Half Arms ",
+                        stylist: "",
+                        amount: 650 
+                    },  {
+                        name: "Half Legs  ",
+                        stylist: "",
+                        amount: 1050 
+                    }
+                ]
+            }, {
+                serviceID: "MenSix",
+                serviceType: "Waxing Services",
+                services: [
+                    {   
+                        serviceSubType: "Groom",
+                        name: "Modern Blush ",
+                        stylist: "(Includes Kryolan Makeup and Romantic Wedding Hairstyle) ",
+                        amount: 5000 
+                    }, {
+                        name: "Radiant Verve ",
+                        stylist: "(Includes High Definition Makeup and Romantic Wedding Hairstyle) ",
+                        amount: 8000 
+                    }, {
+                        name: "Epic Luxury ",
+                        stylist: "(Includes Air Brush Makeup and Romantic Wedding Hairstyle) ",
+                        amount: 10000 
+                    }, 
+                ]
+            },]
         }}, {
         person: {
             gender: "fa fa-venus",
@@ -241,16 +287,16 @@ var data = {
                 services: [
                     {
                         name: "HAIRCUT ",
-                        stylist: "Style Director",
+                        stylist: "(Style Director)",
                         amount: 1750
                     }, {
                         name: "HAIRCUT ",
-                        stylist: "Top Stylist",
+                        stylist: "(Top Stylist)",
                         amount: 1250
                     },
                     {
                         name: "HAIRCUT ",
-                        stylist: "Senior  Stylist",
+                        stylist: "(Senior  Stylist)",
                         amount: 850
                     },  {
                         name: "Kids Haircut",
@@ -372,7 +418,32 @@ var data = {
                         stylist: "",
                         amount: 750 
                     }]
-            }]
+            },  {
+                serviceID: "WomenFive",
+                serviceType: "Threading Services",
+                services: [
+                    {
+                        name: "Eyebrow Shaping ",
+                        stylist: "",
+                        amount: 60 
+                    }, {
+                        name: "Chin/Forehead ",
+                        stylist: "",
+                        amount: 50 
+                    },{
+                        name: "Upper Lip ",
+                        stylist: "",
+                        amount: 50 
+                    }, {
+                        name: "Full Face ",
+                        stylist: "",
+                        amount: 300 
+                    }, {
+                        name: "Side Face ",
+                        stylist: "",
+                        amount: 100 
+                    },]
+            },]
         }}
     ]
 }   
