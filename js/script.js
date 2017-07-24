@@ -23,10 +23,15 @@ function triggerOverlay() {
     }
 }
 //--------------------------------------------------------------------//
-function phonenumber(inputtxt)  
+
+//---------------------------------------------------------------------//
+// Function to check if the phone number entered is correct
+function phonenumber()  
 {  
-  var phoneno = /^\d{10}$/;  
-  if(inputtxt.match(phoneno))  
+  let telTemp = $("#tel-input").val();
+  let tel = telTemp.toString();  
+  let phoneno = /^\d{10}$/;  
+  if(tel.match(phoneno))  
   {  
       return true;  
   }  
@@ -36,6 +41,9 @@ function phonenumber(inputtxt)
      return false;  
   }  
 }  
+// ---------------------------------------------------------------------//
+
+
 //----------------------------------------------------------------------//
 // function to clear the book an appointment form after submitting the values.
 function clearForm() {
@@ -79,9 +87,7 @@ function formValidation(name, tel) {
 function postToGoogle() {
     let name = $("#text-input").val();
     let email = $("#email-input").val();
-    let tempTel = $("#tel-input").val();
-    let tel = tempTel.toString();
-    phonenumber(tel);
+    let tel = $("#tel-input").val();
     let date = $("#date-input").val();
     let tempDate = date.split("-");
     let time = $("#time-input").val();
