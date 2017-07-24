@@ -109,6 +109,9 @@ header {
     display: flex;
     flex-direction: column;
 }
+.salon-services-name {
+    width: 70%;
+}
 .salon-services-list {
     display: flex;
     justify-content: space-between;

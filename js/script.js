@@ -205,7 +205,7 @@ var data = {
                     {
                         name: "Keratin Hair Treatment",
                         stylist: "",
-                        amount: "3550 onwards" 
+                        amount: "3550+" 
                     }, {
                         name: "Smoothening Hair Treatment",
                         stylist: "",
@@ -307,15 +307,15 @@ var data = {
                     }, {
                         name: "Blow Dry ",
                         stylist: "",
-                        amount: "650 Onwards"
+                        amount: "650+"
                     }, {
                         name: "Tongs",
                         stylist: "",
-                        amount: "950 Onwards"
+                        amount: "950+"
                     },{
                         name: "Ironing",
                         stylist: "",
-                        amount: "850 Onwards"
+                        amount: "850+"
                     }, {
                         name: "Up Styling",
                         stylist: "",
@@ -330,40 +330,40 @@ var data = {
                         serviceSubType: "Absolute Colour",
                         name: "Global Base Colour ",
                         stylist: "",
-                        amount: "2550 Onwards" 
+                        amount: "2550+" 
                      },  {
                         name: "Global Fashion Colour ",
                         stylist: "",
-                        amount: "3550 Onwards" 
+                        amount: "3550+" 
                     }, {
                         name: "Root Touch-up ",
                         stylist: "",
-                        amount: "1550 Onwards" 
+                        amount: "1550+" 
                     }, {  
                         serviceSubType: "Creative Colour",
                         name: "Root Touch-up",
                         stylist: "",
-                        amount: "1750 Onwards" 
+                        amount: "1750+" 
                      }, {
                         name: "Colour Refresh",
                         stylist: "",
-                        amount: "2050 Onwards" 
+                        amount: "2050+" 
                     },{
                         name: "Balayage ",
                         stylist: "",
-                        amount: "4550 Onwards" 
+                        amount: "4550+" 
                     }, {
                         name: "Ombre ",
                         stylist: "",
-                        amount: "4550 Onwards" 
+                        amount: "4550+" 
                     }, {
                         name: "Full Head Highlights",
                         stylist: "",
-                        amount: "5050 Onwards" 
+                        amount: "5050+" 
                     }, {
                         name: "Single Streak ",
                         stylist: "",
-                        amount: "450 Onwards" 
+                        amount: "450+" 
                     }
                  ]
             }, {
@@ -373,11 +373,11 @@ var data = {
                     {
                         name: "Keratin Treatment",
                         stylist: "",
-                        amount: "7050 Onwards" 
+                        amount: "7050+" 
                     }, {
                         name: "Smoothening Treatment",
                         stylist: "",
-                        amount: "6050 Onwards" 
+                        amount: "6050+" 
                     },{
                         name: "Smoothening Fringe",
                         stylist: "",

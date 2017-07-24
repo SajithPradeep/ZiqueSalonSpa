@@ -73,8 +73,8 @@
                         <div>
                             {{#each person.category}}
                             <p class="service-group-title">{{serviceType}}</p>
-                            {{#each services}}
                             <ul style="list-style: none; padding-left: 0;">
+                                {{#each services}}
                                 {{#if serviceSubType}}
                                     <li class="service-group-subtitle">
                                         <p>{{serviceSubType}} </p>
@@ -94,8 +94,8 @@
                                         {{amount}}
                                     </p>
                                 </li>
+                                {{/each}}
                             </ul>
-                            {{/each}}
                             {{/each}}
                         </div>
                     </div>
