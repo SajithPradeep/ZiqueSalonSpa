@@ -99,6 +99,27 @@
                                 </li>
                                 {{/each}}
                             </ul>
+                            <div class="conditions">
+                             {{#if conditionsApply}}
+                                <p class="conditions-apply">
+                                   ** {{conditionsApply}}
+                                </p>    
+                            {{/if}}
+                            {{#if disclaimer}}
+                                <p class="disclaimer">
+                                    **<strong>
+                                        {{disclaimer}}
+                                    </strong>    
+                                </p>    
+                            {{/if}}
+                            {{#if onwards}}
+                                <p class="onwards">
+                                    <strong>
+                                        {{onwards}}
+                                    </strong>    
+                                </p>    
+                            {{/if}}
+                            </div>
                             {{/each}}
                         </div>
                     </div>

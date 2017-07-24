@@ -232,7 +232,7 @@ var data = {
                 ]
             }, {
                 serviceID: "MenFive",
-                serviceType: "Wedding Special",
+                serviceType: "Waxing Services",
                 services: [
                     {
                         name: "Chest & Abdomen ",
@@ -258,7 +258,10 @@ var data = {
                 ]
             }, {
                 serviceID: "MenSix",
-                serviceType: "Waxing Services",
+                serviceType: "Wedding Special",
+                conditionsApply: "Additional charges are applicable for outdoor services.",
+                disclaimer: "Prices inclusive of consultation and Taxes.",
+                onwards: "+ from the above mentioned price onwards.",
                 services: [
                     {   
                         serviceSubType: "Groom",
@@ -509,6 +512,9 @@ var data = {
             },  {
                 serviceID: "WomenSeven",
                 serviceType: "Wedding Special",
+                conditionsApply: "Additional charges are applicable for outdoor services.",
+                disclaimer: "Prices inclusive of consultation and Taxes.",
+                onwards: "+ from the above mentioned price onwards.",
                 services: [
                     {   
                         serviceSubType: "BRIDE",
@@ -714,6 +720,8 @@ var data = {
             },  {
                     serviceID: "UnisexSix",
                     serviceType: "SPA Services",
+                    conditionsApply: "Additional charges are applicable for outdoor services.",
+                    disclaimer: "Prices inclusive of consultation and Taxes.",
                     services: [
                     {
                         name: "Traditional Thai Message ",
