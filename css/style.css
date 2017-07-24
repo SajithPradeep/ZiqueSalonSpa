@@ -99,6 +99,7 @@ header {
 .salon-services-list {
     display: flex;
     justify-content: space-between;
+     text-shadow: 0px 0px 6px #000;
 }
 .service-group-title {
     font-size: 30px;
@@ -113,6 +114,7 @@ header {
 .salon-services-span {
     font-size: 12px;
     margin-right: 10px;
+    text-shadow: 0px 0px 6px #000;
 }
 .salon-services-amount {
     margin-left: 10px;
@@ -120,11 +122,13 @@ header {
 #google-form {
     position: fixed;
     left: 50%;
-    transform: translate(-50%, 0);
+    top: 10%;
+    transform: translate(-50%, 0); 
     background: #0f1314;
     display: none;
-    flex-direction: column;
+    flex-direction: column; 
     padding: 30px;
+    width: 40%;
 }
 
 .form-elements {
