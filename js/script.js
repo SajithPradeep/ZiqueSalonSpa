@@ -441,27 +441,331 @@ var data = {
                         stylist: "",
                         amount: 100 
                     }]
+            },  {
+                serviceID: "WomenSix",
+                serviceType: "Waxing Services",
+                services: [
+                    {
+                        name: "Upper Lip ",
+                        stylist: "",
+                        amount: 95 
+                    }, {
+                        name: "Chin ",
+                        stylist: "",
+                        amount: 95
+                    },{
+                        name: "Upper Lip & Chin ",
+                        stylist: "",
+                        amount: 175
+                    }, {
+                        name: "Forehead ",
+                        stylist: "",
+                        amount: 95 
+                    }, {
+                        name: "Full Arms ",
+                        stylist: "",
+                        amount: 500 
+                    }, {
+                        name: "Half Arms ",
+                        stylist: "",
+                        amount: 300 
+                    }, {
+                        name: "Under Arms ",
+                        stylist: "",
+                        amount: 150 
+                    }, {
+                        name: "Full Legs ",
+                        stylist: "",
+                        amount: 750 
+                    }, {
+                        name: "Half Legs ",
+                        stylist: "",
+                        amount: 450 
+                    }, {
+                        name: "Bikini Line ",
+                        stylist: "",
+                        amount: 550 
+                    }, {
+                        name: "Brazilian Wax ",
+                        stylist: "(Bikini) ",
+                        amount: 1950 
+                    }, {
+                        name: "Neck ",
+                        stylist: "",
+                        amount: 150 
+                    }, {
+                        name: "Full Body ",
+                        stylist: "(Face, neck, arms, underarms, legs, feet and front & back)",
+                        amount: 2750 
+                    }, {
+                        name: "Stomach/Full Front ",
+                        stylist: "",
+                        amount: "550/750" 
+                    }, {
+                        name: "Half Back/ Full Back ",
+                        stylist: "",
+                        amount: "550/750" 
+                    }]
+            },  {
+                serviceID: "WomenSeven",
+                serviceType: "Wedding Special",
+                services: [
+                    {   
+                        serviceSubType: "BRIDE",
+                        name: "Modern Blush ",
+                        stylist: "(Includes Kryolan Makeup, Romantic Wedding Hairstyle and Saree Draping) ",
+                        amount: 12000 
+                    }, {
+                        name: "Radiant Verve ",
+                        stylist: "(Includes High Definition Makeup, Romantic Wedding Hairstyle and Saree Draping) ",
+                        amount: 15000 
+                    },{
+                        name: "Epic Luxury ",
+                        stylist: "(Includes Air Brush Makeup, Romantic Wedding Hairstyle and Saree Draping) ",
+                        amount: 20000 
+                    }, {
+                        name: "Bridesmaid Makeup ",
+                        stylist: "(Makeup & Hairdo) ",
+                        amount: 5000
+                    }]
             }]
         }},
         {
-            person: {
-                gender: "fa fa-intersex",
+        person: {
+            gender: "fa fa-intersex",
                 category: [{
                     serviceID: "UnisexOne",
-                    serviceType: "Hair Cut & Style",
+                    serviceType: "Hands and Feet",
                     services: [
                         {
-                            name: "Head Oil Massage",
+                            name: "Traditional Pedicure ",
                             stylist: "",
-                            amount: 750 
+                            amount: 650 
                         }, {
-                            name: "Deep Hair Repair Treatment ",
+                            name: "Traditional Manicure  ",
                             stylist: "",
-                            amount: 2850 
-                        }
-                    ]
-                }]
-            }
+                            amount: 550 
+                        }, {
+                            name: "Spa Pedicure ",
+                            stylist: "",
+                            amount: 1050 
+                        }, {
+                            name: "Spa Manicure ",
+                            stylist: "",
+                            amount: 950 
+                        }, {
+                            name: "Signature Pedicure ",
+                            stylist: "",
+                            amount: 1250 
+                        }, {
+                            name: "Signature Manicure ",
+                            stylist: "",
+                            amount: 1050 
+                        }]
+                },  {
+                    serviceID: "UnisexTwo",
+                    serviceType: "Bleaching Services",
+                    services: [
+                    {
+                        name: "Face & Neck ",
+                        stylist: "",
+                        amount: 650 
+                    }, {
+                        name: "Upper Lip ",
+                        stylist: "",
+                        amount: 85
+                    },{
+                        name: "Under Arms ",
+                        stylist: "",
+                        amount: 200
+                    }, {
+                        name: "Feet ",
+                        stylist: "",
+                        amount: 250 
+                    }, {
+                        name: "Half Arms ",
+                        stylist: "",
+                        amount: 350 
+                    }, {
+                        name: "Full Arms ",
+                        stylist: "",
+                        amount: 500 
+                    }, {
+                        name: "Half Back/Front ",
+                        stylist: "",
+                        amount: 450 
+                    }, {
+                        name: "Full Back/Front ",
+                        stylist: "",
+                        amount: 750 
+                    }, {
+                        name: "Half Legs ",
+                        stylist: "",
+                        amount: 450 
+                    }, {
+                        name: "Full Legs ",
+                        stylist: "",
+                        amount: 850 
+                    }, {
+                        name: "Full Body ",
+                        stylist: "(Face, neck, arms, underarms, legs, feet and front & back) ",
+                        amount: 3750
+                    }]
+            },  {
+                    serviceID: "UnisexThree",
+                    serviceType: "Makeover",
+                    services: [
+                        {
+                            name: "Party Makeup ",
+                            stylist: "",
+                            amount: 2250 
+                        }, {
+                            name: "Eye Makeup ",
+                            stylist: "",
+                            amount: 1250 
+                        }, {
+                            name: "Trail Makeup",
+                            stylist: "",
+                            amount: 1500 
+                        }]
+            },  {
+                    serviceID: "UnisexFour",
+                    serviceType: "Hair Extensions",
+                    services: [
+                        {
+                            name: "There is a hair extension for everyone! Whether you want to add length, volume or colour. Speak to your stylist for more details. ",
+                            stylist: "",
+                            amount: ""
+                        }, {
+                            name: "",
+                            stylist: "*Quotation on Consultation. ",
+                            amount: "" 
+                        }]
+            },   {
+                    serviceID: "UnisexFive",
+                    serviceType: "Skin Services",
+                    services: [
+                    {
+                        name: "Classic Clean Up ",
+                        stylist: "",
+                        amount: 1050 
+                    }, {
+                        name: "Advanced Tan Removal Hydrating Clean up ",
+                        stylist: "",
+                        amount: 1450
+                    },{
+                        name: "Advanced Skin Lightening Clarifying Clean up ",
+                        stylist: "",
+                        amount: 1450
+                    }, {
+                        name: "Anti-Ageing Vitamin C Clean up ",
+                        stylist: "",
+                        amount: 1450 
+                    }, {
+                        name: "Golden Glow Facial ",
+                        stylist: "",
+                        amount: 1850 
+                    }, {
+                        name: "Skin Brightening Facial ",
+                        stylist: "",
+                        amount: 3250 
+                    }, {
+                        serviceSubType: "Dermalogica Treatments ",
+                        name: "Eye Firm Treatment ",
+                        stylist: "",
+                        amount: 1250 
+                    }, {
+                        name: "Microzone Flash Exfoliation Treatment ",
+                        stylist: "",
+                        amount: 1650 
+                    }, {
+                        name: "Black Head Relief ",
+                        stylist: "",
+                        amount: 1650 
+                    }, {
+                        name: "Dry Skin Nourishment ",
+                        stylist: "",
+                        amount: 2850 
+                    }, {
+                        name: "Oil Control Treatment ",
+                        stylist: "",
+                        amount: 2850
+                    }, {
+                        name: "Ultra Calming Treatment ",
+                        stylist: "",
+                        amount: 3550
+                    }, {
+                        name: "Power Bright Treatment ",
+                        stylist: "",
+                        amount: 4250
+                    }, {
+                        name: "AGEsmart Treatment ",
+                        stylist: "",
+                        amount: 4550
+                    }, {
+                        name: "Dead Sea Mineral Facial ",
+                        stylist: "",
+                        amount: 2850
+                    }, {
+                        name: "Men's Skin Fitness ",
+                        stylist: "",
+                        amount: 3350
+                    }]
+            },  {
+                    serviceID: "UnisexSix",
+                    serviceType: "SPA Services",
+                    services: [
+                    {
+                        name: "Traditional Thai Message ",
+                        stylist: "(60 Min/90 Min) ",
+                        amount: "1450/1750"
+                    }, {
+                        name: "Sense of Thai Aroma Therapy ",
+                        stylist: "60 Min/90 Min",
+                        amount: "1650/1850"
+                    },{
+                        name: "Thai Signature Therapy ",
+                        stylist: "(90 Min) ",
+                        amount: 2000
+                    }, {
+                        name: "Deep Tissue Massage ",
+                        stylist: "60 Min/90 Min",
+                        amount: "2250/2550"
+                    }, {
+                        name: "Swedish Massage ",
+                        stylist: "(60 Min/90 Min) ",
+                        amount: "2250/2550"
+                    }, {
+                        name: "Javanese Royal Body ",
+                        stylist: "(60 Min/90 Min)",
+                        amount: "2250/2550"
+                    }, {
+                        name: "Hawaiian Lomi Lomi Massage ",
+                        stylist: "(60 Min/90 Min) ",
+                        amount: "2250/2550" 
+                    }, {
+                        name: "Head-to-Toe Relaxation Massage ",
+                        stylist: "120 Min",
+                        amount: 3250 
+                    }, {
+                        name: "Head, Neck & Shoulder Massage  ",
+                        stylist: "(45 Min) ",
+                        amount: "850-1050" 
+                    }, {
+                        name: "Reflexology ",
+                        stylist: "(Hands & Feet) (30 Min/60 Min) ",
+                        amount: "850/1050"
+                    }, {
+                        name: "Body Polish Ritual " ,
+                        stylist: "((120 Min (Massage+Polish)) ",
+                        amount: 3750
+                    }, {
+                        name: "Brightening Body Scrub & Wrap  ",
+                        stylist: "120 Min",
+                        amount: 4250
+                    },]
+            }]
+            }  
         }
     ]
 }   
