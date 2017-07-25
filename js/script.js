@@ -114,8 +114,9 @@ function postToGoogle() {
             alert("Appointment Booked Successfully");
         },
         error: function() {
-             clearForm();
+            clearForm();
             triggerOverlay();
+            alert("Appointment Booked Successfully");
         }    
     });
     }  
