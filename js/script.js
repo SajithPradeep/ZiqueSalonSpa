@@ -640,8 +640,7 @@ var data = {
                     services: [
                         {
                             name: "There is a hair extension for everyone! Whether you want to add length, volume or colour. Speak to your stylist for more details. ",
-                            stylist: "",
-                            amount: ""
+                            stylist: ""
                         }, {
                             name: "",
                             stylist: "*Quotation on Consultation. ",
