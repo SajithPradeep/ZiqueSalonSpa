@@ -1,19 +1,13 @@
+/* Contains the body styles */
 body {
     background: url("../images/bg.jpg") fixed 50% 20%;
     color: #fff;
     font-family: 'Varela Round', sans-serif;
 }
-.brand-logo img{
-  width: 60%;
-  margin: 0 auto;
-  display: block;
-  margin-top: 12em;
-  opacity: 0.7;
+/* ------------------------- */
 
-}
-header {
-    background:rgba(100,100,100,0.1);
-}
+
+/* Header and header icon styles  */
 .header-content {
     display: flex;
     align-items: center;
@@ -30,38 +24,40 @@ header {
     color: rgba(255,255,255,0.6);
     font-size: 36px;
 }
-.header-logo img {
-    height: 40px;
-    margin: 10px;
-}
-.header-button {
-    padding: 5px 10px 5px 10px;
-    border: 2px solid;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-}
-.body-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0;
-}
-#modal {
-    display: none;
-}
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 #whatsapp {
     font-size: 20px;
     display: none;
     align-items: center;
     position: absolute;
     top: 54px;
+}
+/*------------------------------------*/
+
+
+
+/*------------------------------------*/
+/*Body content contains the style for the main section excluding header and footer*/
+.body-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+
+/*-------------------------------------------------*/
+/* Styles for the Zique brand image and book an appointment button */
+.brand-logo img{
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12em;
+  opacity: 0.7;
+
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .book-appointment{
   margin-top: 1em;
@@ -70,63 +66,60 @@ header {
 .book-appointment .btn{
   background: rgba(255,255,255, 0.8)
 }
+/*-------------------------------------------------*/
+
+/*-----------------------------------------*/
+/*Starting of the Services menu section container for the 3 sections.*/
 .servicesMenu {
-    display: flex;
     margin-top: 13em;
-    flex-wrap: wrap;
-  	justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .gender {
-    flex: 1;
     font-size: 50px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    padding: 1em 1em 5em;
+    padding: 0.1em 0.1em 5em;
 }
 .gender:nth-child(1) {
-    flex: 50%;
     border-right: 1px solid rgba(150,150,150,1);
     border-bottom: 1px solid rgba(150,150,150,1);
     border-top: 1px solid rgba(150,150,150,1);
     background: rgba(0,0,255,0.2);
+    height: 100%;
 }
 .gender:nth-child(2) {
-    flex: 50%;
     background: rgba(255, 0, 255, 0.2);
     border-top: 1px solid rgba(150,150,150,1);
     border-bottom: 1px solid rgba(150,150,150,1);    
 }
 .gender:nth-child(3) {
-    flex: 100%;
     background: rgba(0, 0, 0, 0.2);
+}
+.gender-icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .salon-services {
     border: 1px solid rgba(100,100,100,0.1);
     border-radius: 10px;
     font-size: 15px;
-    padding: 10px 10px 0 10px;
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+    padding: 0 0 0 10px;
+    margin-top: 100px;
 }
 .salon-services-name {
     width: 70%;
 }
 .salon-services-list {
-    display: flex;
-    justify-content: space-between;
-     text-shadow: 0px 0px 6px #000;
+    text-shadow: 0px 0px 6px #000;
+    padding-left: 5px;
 }
 .service-group-title {
     font-size: 30px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .service-group-subtitle {
     font-size: 25px;
-    display: flex;
-    justify-content: center;
 }
 .salon-services-span {
     font-size: 12px;
@@ -134,11 +127,16 @@ header {
     text-shadow: 0px 0px 6px #000;
 }
 .salon-services-amount {
-    margin-left: 10px;
+    padding-right: 0;
+    text-align: right;
 }
 .conditions {
     margin-top: 50px;
 }
+/*--------End of sevices list styles-----------*/
+
+/*-------------------------------------------------*/
+/*Book an appointment overlay google form submit styles*/
 #google-form {
     position: fixed;
     left: 50%;
@@ -150,7 +148,6 @@ header {
     padding: 30px;
     width: 40%;
 }
-
 .form-elements {
     display: flex;
     flex-direction: column;
@@ -172,7 +169,9 @@ header {
     font-size: 18px;
     background: #0d0d0d;
 }
+/*----------End of Book an appointment overlay styles-------------*/
 
+/*-------------------------------------------------*/
 /* footer styles */
 footer {
     padding: 20px;
@@ -194,9 +193,30 @@ footer {
 .footer-icons li{
   padding:0.3em;
 }
+.footer-icons-collection {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+#whatsapp-footer-display {
+    position: absolute;
+    top: 54px;
+    font-size: 20px;
+    display: none;
+    left: 0;
+}
+.footer-icons {
+    margin: 0.5em 0.5em 0 0 ;
+    color: #337ab7;
+    font-size: 36px;
+}
+.footer-icons:hover {
+    cursor: pointer;
+}
+/*-----End of Footer styles-----------------------*/
 
 
-
+/*-------------------------------------------------*/
 /* media queries */
 @media screen and (max-width: 500px) {
     .title-heading h1 {
@@ -217,7 +237,7 @@ footer {
         
     }
     .gender {
-        padding: 0;
+        padding: 10px;
     }
     .service-group-title {
         font-size: 25px;
@@ -262,3 +282,4 @@ footer {
         width: 75%;
     }
 }
+/*---------------End of the Styles page-----------------------------*/

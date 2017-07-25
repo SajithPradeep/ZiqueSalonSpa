@@ -20,9 +20,6 @@
         <!--This is the header section that contains the title bar and the social media icons-->
         <header>
             <div class="header-content">
-                <div class="header-logo">
-                    <img src="images/logo.png" class="hide"/>
-                </div>
                 <div class="header-icons-collection">
                     <div>
                         <a href="https://www.facebook.com/ZiqueSalon/?fref=ts" data-toggle="tooltip" title="Follow us on Facebook">
@@ -36,10 +33,10 @@
                     </div>
                     <div>
                         <a href="#" data-toggle="tooltip" title="Contact us on Whatsapp">
-                            <i class="fa fa-whatsapp header-icon" style="font-size:36px" onclick="whatsappToggle()"></i>
+                            <i class="fa fa-whatsapp header-icon" style="font-size:36px" onclick="whatsappToggle('whatsapp')"></i>
                         </a>
                     </div>
-                    <div id="whatsapp"><span class="label label-default">+91987654321</span></div>
+                    <div id="whatsapp"><span class="label label-default">+917338831121</span></div>
                 </div>
             </div>
         </header>
@@ -66,10 +63,10 @@
             <!--End of section-->
 
             <!--This section contains the list of services for both men and women-->
-            <div class="servicesMenu">
+            <div class="servicesMenu row">
                 {{#users}}
-                <div class="gender">
-                    <i class="{{person.gender}}" aria-hidden="true" style="font-size:75px"></i>
+                <div class="gender col col-md-4">
+                    <i class="{{person.gender}} gender-icon" aria-hidden="true" style="font-size:75px"></i>
                     <div class="salon-services">
                         <div>
                             {{#each person.category}}
@@ -81,14 +78,14 @@
                                         <p>{{serviceSubType}} </p>
                                     </li>
                                 {{/if}}    
-                                <li class="salon-services-list">
-                                    <p class="salon-services-name">
+                                <li class="salon-services-list row">
+                                    <p class="salon-services-name col col-xs-9">
                                         {{name}}
                                         <span class="salon-services-span">
                                             {{stylist}}
                                         </span>
                                     </p>
-                                    <p class="salon-services-amount">
+                                    <p class="salon-services-amount col col-xs-3">
                                         {{#if amount}}
                                         <span>
                                             <i class="fa fa-inr" style="font-size:15px"></i>
@@ -189,25 +186,27 @@
                     <p>  Old No: 9 New No:7 Mc Nichols Road,Chetpet, Chennai- 600031 </p>
                     <h4>Phone</h4>
                     <p> +91 7338831121 </p>
+                    <p> 044-43849888, 9988 </p>
                     <h4>Email</h4>
                     <p>info@ziquesalon.com</p>
-                    <ul class="footer-icons">
-                        <li>
+                    <div class="footer-icons-collection">
+                        <div>
                             <a href="https://www.facebook.com/ZiqueSalon/?fref=ts" data-toggle="tooltip" title="Follow us on Facebook">
-                                <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                                <i class="fa fa-facebook-square footer-icons" style="font-size:36px"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/ziquesalonspa/" data-toggle="tooltip" title="Follow us on Twitter">
-                                <i class="fa fa-instagram" style="font-size:36px"></i>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/ziquesalonspa/" data-toggle="tooltip" title="Follow us on Instagram">
+                                <i class="fa fa-instagram footer-icons" style="font-size:36px"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#" data-toggle="tooltip" title="Contact us on Whatsapp">
-                                <i class="fa fa-whatsapp" style="font-size:36px"></i>
+                        </div>
+                        <div>
+                            <a data-toggle="tooltip" title="Contact us on Whatsapp">
+                                <i class="fa fa-whatsapp footer-icons" style="font-size:36px" onclick="whatsappToggle('whatsapp-footer-display')"></i>
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                        <div id="whatsapp-footer-display"><span class="label label-default">+917338831121</span></div>
+                    </div>
                 </div>
                 <div class="map">
                      <h3>Direction</h3>
