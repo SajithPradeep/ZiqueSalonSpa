@@ -209,7 +209,7 @@ var data = {
                     }, {
                         name: "Smoothening Hair Treatment",
                         stylist: "",
-                        amount: 3050 
+                        amount: "3050+" 
                     }
                 ]
             }, {

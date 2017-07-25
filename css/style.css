@@ -231,7 +231,7 @@ footer {
 
 /*-------------------------------------------------*/
 /* media queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
     .header-content {
         display: flex;
         align-items: center;
@@ -239,15 +239,12 @@ footer {
     .gender {
         padding: 10px;
     }
-    .service-group-title {
-        font-size: 25px;
-    }
     body {
         background: black;
     }
 }
 
-@media screen and (max-width: 800px) and (min-width: 501px) {
+@media screen and (max-width: 768px) and (min-width: 577px) {
     .title-heading h1 {
         font-size: 180px;
         margin-bottom: 5px;
@@ -259,7 +256,7 @@ footer {
     }
 }
 
-@media screen and (max-width:855px) {
+@media screen and (max-width: 992px) {
     .gender:nth-child(odd) {
         border-right: none;
     }
