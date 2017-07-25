@@ -111,6 +111,7 @@ function postToGoogle() {
         success: function () {
             clearForm();
             triggerOverlay();
+            alert("Appointment Booked Successfully");
         },
         error: function() {
              clearForm();
