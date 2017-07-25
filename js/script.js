@@ -33,6 +33,7 @@ function phonenumber()
   let phoneno = /^\d{10}$/;  
   if(tel.match(phoneno))  
   {  
+      document.getElementById("tel-input").style.border="2px solid black";
       return true;  
   }  
   else  
@@ -54,29 +55,24 @@ function clearForm() {
     $("#time-input").val("");
 }
 //--------------------------------------------------------------------//
+function nameValidation() {
+    var name = $("#text-input").val();
+    if (name) {
+        document.getElementById("text-input").style.border="2px solid black";
+    } 
+}
 
 function formValidation(name, tel) {
     if(name === "" && tel==="") {
         alert("Name and Telephone number cannot be left empty");
         document.getElementById("text-input").style.border="2px solid red";
         document.getElementById("tel-input").style.border="2px solid red";
-        $("#email-input").val("");
-        $("#date-input").val("");
-        $("#time-input").val("");
     } else if (name === "") {
         alert("Name cannot be left empty");
         document.getElementById("text-input").style.border="2px solid red";
-        $("#tel-input").val("");
-        $("#email-input").val("");
-        $("#date-input").val("");
-        $("#time-input").val("");
     } else if (tel === "") {
         alert("Telephone number cannot be left empty");
         document.getElementById("tel-input").style.border="2px solid red";
-        $("#text-input").val("");
-        $("#email-input").val("");
-        $("#date-input").val("");
-        $("#time-input").val("");
     }
     else {
         return true;
@@ -95,6 +91,7 @@ function postToGoogle() {
     let formValid = formValidation(name, tel);
 
     if(formValid) {
+        console.log("ajax");
         $.ajaxSetup({ cache: false });
         $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSezeWkcIyiqtADR-7DH8ERWu7K5leVDIbd40jUtS80sEnzJbg/formResponse",
