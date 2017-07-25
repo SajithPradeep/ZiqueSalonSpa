@@ -91,7 +91,6 @@ function postToGoogle() {
     let formValid = formValidation(name, tel);
 
     if(formValid) {
-        console.log("ajax");
         $.ajaxSetup({ cache: false });
         $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSezeWkcIyiqtADR-7DH8ERWu7K5leVDIbd40jUtS80sEnzJbg/formResponse",
