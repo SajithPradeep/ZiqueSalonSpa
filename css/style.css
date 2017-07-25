@@ -251,6 +251,9 @@ footer {
         margin-bottom: 5px;
         margin-top: 50px
     }
+    body {
+        background: black;
+    }
      #whatsapp {
         position: absolute;
         top: 54px;

@@ -500,11 +500,11 @@ var data = {
                     }, {
                         name: "Stomach/Full Front ",
                         stylist: "",
-                        amount: "550/750" 
+                        amount: "550 / 750" 
                     }, {
                         name: "Half Back/ Full Back ",
                         stylist: "",
-                        amount: "550/750" 
+                        amount: "550 / 750" 
                     }]
             },  {
                 serviceID: "WomenSeven",
@@ -722,11 +722,11 @@ var data = {
                     {
                         name: "Traditional Thai Message ",
                         stylist: "(60 Min/90 Min) ",
-                        amount: "1450/1750"
+                        amount: "1450 / 1750"
                     }, {
                         name: "Sense of Thai Aroma Therapy ",
                         stylist: "60 Min/90 Min",
-                        amount: "1650/1850"
+                        amount: "1650 / 1850"
                     },{
                         name: "Thai Signature Therapy ",
                         stylist: "(90 Min) ",
@@ -734,19 +734,19 @@ var data = {
                     }, {
                         name: "Deep Tissue Massage ",
                         stylist: "60 Min/90 Min",
-                        amount: "2250/2550"
+                        amount: "2250 / 2550"
                     }, {
                         name: "Swedish Massage ",
                         stylist: "(60 Min/90 Min) ",
-                        amount: "2250/2550"
+                        amount: "2250 / 2550"
                     }, {
                         name: "Javanese Royal Body ",
                         stylist: "(60 Min/90 Min)",
-                        amount: "2250/2550"
+                        amount: "2250 / 2550"
                     }, {
                         name: "Hawaiian Lomi Lomi Massage ",
                         stylist: "(60 Min/90 Min) ",
-                        amount: "2250/2550" 
+                        amount: "2250 / 2550" 
                     }, {
                         name: "Head-to-Toe Relaxation Massage ",
                         stylist: "120 Min",
@@ -758,7 +758,7 @@ var data = {
                     }, {
                         name: "Reflexology ",
                         stylist: "(Hands & Feet) (30 Min/60 Min) ",
-                        amount: "850/1050"
+                        amount: "850 / 1050"
                     }, {
                         name: "Body Polish Ritual " ,
                         stylist: "((120 Min (Massage+Polish)) ",
