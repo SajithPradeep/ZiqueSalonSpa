@@ -135,16 +135,17 @@ body {
     /* position: absolute;
     right: 0; */
 }
-.fa-inr {
-    display: none;
-}
 .rupee-amount:before {
     margin-right: 4px;
     font-family: 'FontAwesome';
     content : '\f156';
 }
+.outdoor-charges {
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
 .conditions {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 /*--------End of sevices list styles-----------*/
 

@@ -259,7 +259,6 @@ var data = {
             }, {
                 serviceID: "MenSix",
                 serviceType: "Wedding Special",
-                conditionsApply: "Additional charges are applicable for outdoor services.",
                 disclaimer: "Prices inclusive of consultation and Taxes.",
                 onwards: "+ from the above mentioned price onwards.",
                 services: [
@@ -275,7 +274,8 @@ var data = {
                     }, {
                         name: "Epic Luxury ",
                         stylist: "(Includes Air Brush Makeup and Romantic Wedding Hairstyle) ",
-                        amount: 10000 
+                        amount: 10000,
+                        outdoorCharges: "Additional charges are applicable for outdoor services."
                     }, 
                 ]
             },]
@@ -512,7 +512,6 @@ var data = {
             },  {
                 serviceID: "WomenSeven",
                 serviceType: "Wedding Special",
-                conditionsApply: "Additional charges are applicable for outdoor services.",
                 disclaimer: "Prices inclusive of consultation and Taxes.",
                 onwards: "+ from the above mentioned price onwards.",
                 services: [
@@ -532,7 +531,8 @@ var data = {
                     }, {
                         name: "Bridesmaid Makeup ",
                         stylist: "(Makeup & Hairdo) ",
-                        amount: 5000
+                        amount: 5000,
+                        outdoorCharges: "Additional charges are applicable for outdoor services."
                     }]
             }]
         }},
@@ -639,8 +639,9 @@ var data = {
                     serviceType: "Hair Extensions",
                     services: [
                         {
-                            name: "There is a hair extension for everyone! Whether you want to add length, volume or colour. Speak to your stylist for more details. ",
-                            stylist: ""
+                            name: "",
+                            stylist: "",
+                            outdoorCharges: "There is a hair extension for everyone! Whether you want to add length, volume or colour. Speak to your stylist for more details."
                         }, {
                             name: "",
                             stylist: "*Quotation on Consultation. ",
@@ -719,7 +720,6 @@ var data = {
             },  {
                     serviceID: "UnisexSix",
                     serviceType: "SPA Services",
-                    conditionsApply: "Additional charges are applicable for outdoor services.",
                     disclaimer: "Prices inclusive of consultation and Taxes.",
                     services: [
                     {
@@ -770,7 +770,7 @@ var data = {
                         name: "Brightening Body Scrub & Wrap  ",
                         stylist: "120 Min",
                         amount: 4250
-                    },]
+                    }]
             }]
             }  
         }
