@@ -258,7 +258,8 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .gender:nth-child(odd) {
+    .gender:nth-child(2) {
+        border-left: none;
         border-right: none;
     }
     .address {
