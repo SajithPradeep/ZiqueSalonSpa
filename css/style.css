@@ -75,7 +75,7 @@ body {
 }
 .gender {
     font-size: 50px;
-    padding: 0.1em 0.1em 5em;
+    padding: 0.9em 0.1em 5em;
 }
 .gender:nth-child(1) {
     border-bottom: 1px solid rgba(150,150,150,1);

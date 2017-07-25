@@ -275,7 +275,7 @@ var data = {
                         name: "Epic Luxury ",
                         stylist: "(Includes Air Brush Makeup and Romantic Wedding Hairstyle) ",
                         amount: 10000,
-                        outdoorCharges: "Additional charges are applicable for outdoor services."
+                        outdoorCharges: "** Additional charges are applicable for outdoor services."
                     }, 
                 ]
             },]
@@ -532,7 +532,7 @@ var data = {
                         name: "Bridesmaid Makeup ",
                         stylist: "(Makeup & Hairdo) ",
                         amount: 5000,
-                        outdoorCharges: "Additional charges are applicable for outdoor services."
+                        outdoorCharges: "** Additional charges are applicable for outdoor services."
                     }]
             }]
         }},
