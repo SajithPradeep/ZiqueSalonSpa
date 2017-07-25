@@ -219,22 +219,9 @@ footer {
 /*-------------------------------------------------*/
 /* media queries */
 @media screen and (max-width: 500px) {
-    .title-heading h1 {
-        font-size: 100px;
-        margin-bottom: 5px;
-        margin-top: 50px
-    }
-    .title-subheading h2 {
-        font-size: 20px;
-        margin-top: 5px;
-        font-family: cursive;
-    }
     .header-content {
         display: flex;
         align-items: center;
-    }
-    #whatsapp {
-        
     }
     .gender {
         padding: 10px;
@@ -260,10 +247,6 @@ footer {
 }
 
 @media screen and (max-width:855px) {
-    .servicesMenu {
-        display: flex;
-        flex-direction: column;
-    }
     .gender:nth-child(odd) {
         border-right: none;
     }
