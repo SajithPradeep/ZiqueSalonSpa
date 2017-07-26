@@ -320,7 +320,7 @@ var data = {
                     }, {
                         name: "Up Styling",
                         stylist: "",
-                        amount: 950
+                        amount: "950+"
                     }
                 ]
             }, {
