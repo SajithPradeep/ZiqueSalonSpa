@@ -78,11 +78,16 @@ body {
     padding-top: 0.9em;
     padding-bottom: 5em;
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .gender:nth-child(1) {
     border-bottom: 1px solid rgba(150,150,150,1);
     border-top: 1px solid rgba(150,150,150,1);
     background: rgba(0,0,255,0.2);
-    height: 100%;
 }
 .gender:nth-child(2) {
     border-left: 1px solid rgba(150,150,150,1);

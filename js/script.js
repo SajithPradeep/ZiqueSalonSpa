@@ -1,3 +1,8 @@
+$(document).ready(function() {
+    if($(window).width() > 768) {
+        $(".servicesMenu").addClass("row-eq-height");
+    }
+});
 //------------------------------------------------------------------//
 // Function to Toggle the Whatsapp Number
 function whatsappToggle(whatsapp) {
