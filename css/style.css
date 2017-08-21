@@ -191,6 +191,30 @@ body {
 }
 /*----------End of Book an appointment overlay styles-------------*/
 
+/*-------------Privacy Statement Styles ---------------*/
+#privacy-statement {
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0); 
+    background: #0f1314;
+    display: none;
+    flex-direction: column; 
+    padding: 30px;
+    width: 60%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.privacy-text:hover {
+    cursor: pointer;
+}
+.privacy-statement-close-button {
+    position: fixed;
+    right: 10px;
+    top: 25px;
+}
+/*------------End of Privacy Statement Styles---------*/
+
 /*-------------------------------------------------*/
 /* footer styles */
 footer {
@@ -285,7 +309,7 @@ footer {
         align-items: center;
         text-align: center;
     }
-    #google-form {
+    #google-form, #privacy-statement {
         width: 75%;
     }
 }

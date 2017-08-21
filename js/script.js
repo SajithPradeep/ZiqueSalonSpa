@@ -18,16 +18,32 @@ function whatsappToggle(whatsapp) {
 
 //-------------------------------------------------------------------//
 // Function to Trigger the Book an appointment overlay
-function triggerOverlay() {
-    var displayType = document.getElementById("google-form").style.display;
+function triggerOverlay(overlayID) {
+    var displayType = document.getElementById(overlayID).style.display;
     if(displayType === "" || displayType === "none") {
-       document.getElementById("google-form").style.display = "flex";
+       document.getElementById(overlayID).style.display = "flex";
     }
     else {
-       document.getElementById("google-form").style.display = "none"
+       document.getElementById(overlayID).style.display = "none"
     }
 }
+
 //--------------------------------------------------------------------//
+
+//Facebook Pixel Code 
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '529071214150400'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+// DO NOT MODIFY
+//End Facebook Pixel Code 
+fbq('track', 'Lead', {
+value: 10.00,
+currency: 'USD'
+});
 
 //---------------------------------------------------------------------//
 // Function to check if the phone number entered is correct
