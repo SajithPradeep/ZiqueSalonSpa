@@ -316,5 +316,8 @@ footer {
     #google-form, #privacy-statement {
         width: 75%;
     }
+    .privacy-statement-close-button {
+        right: 25px;
+    }
 }
 /*---------------End of the Styles page-----------------------------*/
