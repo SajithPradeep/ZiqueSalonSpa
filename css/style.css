@@ -277,6 +277,10 @@ footer {
     .salon-services {
         padding: 0 15px 0 15px;
     }
+    .privacy-statement-close-button {
+        right: 10px;
+        top: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 577px) {
@@ -294,6 +298,10 @@ footer {
     }
     .salon-services {
         padding: 0 15px 0 15px;
+    }
+    .privacy-statement-close-button {
+        right: 15px;
+        top: 15px;
     }
 }
 
