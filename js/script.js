@@ -235,7 +235,7 @@ var data = {
                     }, {
                         name: "Smoothening Hair Treatment",
                         stylist: "",
-                        amount: 3050 
+                        amount: "3050+" 
                     }
                 ]
             }, {
@@ -249,7 +249,7 @@ var data = {
                     }, {
                         name: "Tea Tree Scalp Treatment",
                         stylist: "",
-                        amount: 1550 
+                        amount: "1250+" 
                     }, {
                         name: "Dandruff treatment",
                         stylist: "",
@@ -257,19 +257,13 @@ var data = {
                     }, {
                         name: "Head Oil Massage ",
                         stylist: "(30 Min) ",
-                        amount: 550 
+                        amount: 750 
                     }
                 ]
             }, {
                 serviceID: "MenFive",
                 serviceType: "Waxing Services",
                 services: [
-                    {
-                        serviceSubType: "RICA-Men",
-                        name: "Full front/ back ",
-                        stylist: "",
-                        amount: 1750 
-                    },
                     {
                         name: "Chest & Abdomen ",
                         stylist: "",
@@ -299,7 +293,6 @@ var data = {
                 onwards: "+ from the above mentioned price onwards.",
                 services: [
                     {   
-                        serviceSubType: "Groom",
                         name: "Modern Blush ",
                         stylist: "(Includes Kryolan Makeup and Romantic Wedding Hairstyle) ",
                         amount: 5000 
@@ -346,7 +339,7 @@ var data = {
                     }, {
                         name: "Hair Wash & Volume Blow Dry ",
                         stylist: "",
-                        amount: 850
+                        amount: "850+"
                     }, {
                         name: "Blow Dry ",
                         stylist: "",
@@ -396,6 +389,10 @@ var data = {
                         stylist: "",
                         amount: "5750+" 
                     }, {
+                        name: "Partial Highlights",
+                        stylist: "",
+                        amount: "3050+" 
+                    },{
                         name: "Full Head Highlights",
                         stylist: "",
                         amount: "6550+" 
@@ -428,7 +425,7 @@ var data = {
                     }, {
                         name: "Smoothening Fringe",
                         stylist: "",
-                        amount: 2050 
+                        amount: "2050+" 
                     }]
             }, {
                 serviceID: "WomenFour",
@@ -442,18 +439,10 @@ var data = {
                         name: "Classic Hair Spa",
                         stylist: "",
                         amount: 1550 
-                    },{
-                        name: "Luxury Hair Spa",
-                        stylist: "",
-                        amount: 2050 
                     }, {
                         name: "Tea tree Scalp Treatment ",
                         stylist: "",
                         amount: 2750 
-                    }, {
-                        name: "Hair Fall Treatment",
-                        stylist: "",
-                        amount: 2550 
                     }, {
                         name: "Deep Hair Repair Treatment ",
                         stylist: "",
@@ -461,7 +450,7 @@ var data = {
                     }, {
                         name: "Head Oil Massage",
                         stylist: "",
-                        amount: 850 
+                        amount: "850+" 
                     }, {
                         name: "Dandruff treatment",
                         stylist: "",
@@ -497,7 +486,6 @@ var data = {
                 serviceType: "Waxing Services",
                 services: [
                     {
-                        serviceSubType: "RICA-Women",
                         name: "Upper Lip ",
                         stylist: "",
                         amount: 95 
@@ -538,17 +526,9 @@ var data = {
                         stylist: "",
                         amount: 550 
                     }, {
-                        name: "Stomach ",
-                        stylist: "",
-                        amount: 1050 
-                    }, {
                         name: "Brazilian Wax ",
                         stylist: "(Bikini) ",
                         amount: 1950 
-                    }, {
-                        name: "Full face",
-                        stylist: "",
-                        amount: 650 
                     }, {
                         name: "Neck",
                         stylist: "",
@@ -573,7 +553,6 @@ var data = {
                 onwards: "+ from the above mentioned price onwards.",
                 services: [
                     {   
-                        serviceSubType: "BRIDE",
                         name: "Modern Blush ",
                         stylist: "(Includes Kryolan Makeup, Romantic Wedding Hairstyle and Saree Draping) ",
                         amount: 12000 
@@ -630,6 +609,7 @@ var data = {
                     serviceType: "Bleaching Services",
                     services: [
                     {
+                        serviceSubType: "De Tan Services",                        
                         name: "Face & Neck ",
                         stylist: "",
                         amount: 550 
@@ -637,10 +617,6 @@ var data = {
                         name: "Upper Lip ",
                         stylist: "",
                         amount: 85
-                    }, {
-                        name: "Chin",
-                        stylist: "",
-                        amount: 100
                     }, {
                         name: "Under Arms ",
                         stylist: "",
@@ -694,6 +670,10 @@ var data = {
                             name: "Trail Makeup",
                             stylist: "",
                             amount: 2050 
+                        }, {
+                            name: "Bridesmaid Makeup",
+                            stylist: "(Makeup & Hairdo)",
+                            amount: 5000 
                         }]
             },  {
                     serviceID: "UnisexFour",
@@ -713,9 +693,9 @@ var data = {
                     serviceType: "Skin Services",
                     services: [
                     {
-                        name: "Classic Clean Up",
+                        name: "Classic Clean-Up",
                         stylist: "",
-                        amount: 1050 
+                        amount: 1250 
                     }, {
                         name: "Advanced Tan Removal Hydrating Clean up ",
                         stylist: "",
@@ -735,17 +715,13 @@ var data = {
                     }, {
                         name: "Skin Brightening Facial ",
                         stylist: "",
-                        amount: 3250 
+                        amount: 3450 
                     }, {
                         name: "Eye firm Treatment",
                         stylist: "",
-                        amount: 1250
+                        amount: 1450
                     }, {
                         serviceSubType: "Dermalogica Treatments ",
-                        name: "Eye Firm Treatment ",
-                        stylist: "",
-                        amount: 1250 
-                    }, {
                         name: "Microzone Flash Exfoliation Treatment ",
                         stylist: "",
                         amount: 1650 
@@ -756,35 +732,31 @@ var data = {
                     }, {
                         name: "Hydrating Treatment ",
                         stylist: "",
-                        amount: 2850 
+                        amount: 2950 
                     }, {
                         name: "Dry Skin Nourishment ",
                         stylist: "",
-                        amount: 2850 
+                        amount: 2950 
                     }, {
                         name: "Oil Control Treatment ",
                         stylist: "",
-                        amount: 2850
+                        amount: 2950
                     }, {
                         name: "Ultra Calming Treatment ",
                         stylist: "",
-                        amount: 3550
+                        amount: 3650
                     }, {
                         name: "Power Bright Treatment ",
                         stylist: "",
-                        amount: 4250
+                        amount: 4450
                     }, {
                         name: "AGEsmart Treatment ",
                         stylist: "",
-                        amount: 4550
+                        amount: 4750
                     }, {
                         name: "Dead Sea Mineral Facial ",
                         stylist: "",
-                        amount: 2850
-                    }, {
-                        name: "Men's Skin Fitness ",
-                        stylist: "",
-                        amount: 3350
+                        amount: 2950
                     }]
             },  {
                     serviceID: "UnisexSix",
@@ -802,7 +774,7 @@ var data = {
                     },{
                         name: "Thai Signature Therapy ",
                         stylist: "(90 Min) ",
-                        amount: 2250
+                        amount: 2150
                     }, {
                         name: "Deep Tissue Massage ",
                         stylist: "60 Min/90 Min",
@@ -813,16 +785,12 @@ var data = {
                         amount: "2350 / 2650"
                     }, {
                         name: "Javanese Royal Body ",
-                        stylist: "(60 Min/90 Min)",
+                        stylist: "(60 Min)",
                         amount: 2650
                     }, {
                         name: "Hawaiian Lomi Lomi Massage ",
                         stylist: "(60 Min/90 Min) ",
                         amount: 2650
-                    }, {
-                        name: "Head-to-Toe Relaxation Massage ",
-                        stylist: "120 Min",
-                        amount: 3250 
                     }, {
                         name: "Head, Neck & Shoulder Massage  ",
                         stylist: "(30 Min) Dry/ Oil ",
@@ -834,11 +802,23 @@ var data = {
                     }, {
                         name: "Body Polish Ritual " ,
                         stylist: "(120 Min (Massage+Polish)) ",
-                        amount: 3750
+                        amount: 4050
                     }, {
                         name: "Brightening Body Scrub & Wrap  ",
-                        stylist: "120 Min",
+                        stylist: "(120 Min)",
                         amount: 4450
+                    }, {
+                        name: "Warm Candle Massage",
+                        stylist: "(120 Min)",
+                        amount: 4050
+                    }, {
+                        name: "Signature Four hand massage",
+                        stylist: "(90 Min)",
+                        amount: 5250
+                    }, {
+                        name: "Hot stone Massage",
+                        stylist: "(90 Min(Nourishing))",
+                        amount: 4750
                     }]
             }]
             }  
