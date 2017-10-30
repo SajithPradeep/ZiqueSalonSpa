@@ -287,7 +287,7 @@ footer {
         align-items: center;
     }
     body {
-        background: black;
+        background: url("../images/bg.jpg") fixed 62% 16%;
     }
     .salon-services {
         padding: 0 15px 0 15px;
@@ -305,7 +305,7 @@ footer {
         margin-top: 50px
     }
     body {
-        background: black;
+        background: url("../images/bg.jpg") fixed 62% 16%;
     }
      #whatsapp {
         position: absolute;
