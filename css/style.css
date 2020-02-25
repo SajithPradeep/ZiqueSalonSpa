@@ -141,6 +141,7 @@ body {
 .rupee-amount {
     /* position: absolute;
     right: 0; */
+    display: none;
 }
 .rupee-amount:before {
     margin-right: 4px;
